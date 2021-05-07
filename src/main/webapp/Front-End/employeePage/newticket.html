@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>New Reimbursement</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- navbar stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="employee.css" media="all">
+  
+  </head>
+  <body>
+    <nav style="margin-bottom: 1px;background-color: #ff7300;" class="navbar navbar-inverse navbar fixed-top" >
+      <div class="container-fluid" style="font-size: 18px;">
+        <div class="navbar-header">
+          <a id="empHome" class="navbar-brand" href="employee.html" style="font-size: 21px;color:black"> EMPLOYEE </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../login/login.html" onclick="logOut()"style="color:black"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-wrapper bg-dark p-t-30 p-b-50" style="padding-left: 30%;">
+      <div class="wrapper wrapper--w900">
+          <div class="card card-6">
+              <div class="card-heading">
+                <h2 style="font-weight: 600;" class="title">NEW REIMBURSEMENT</h2>
+              </div>
+              <div class="card-body">
+                  <form method="post" action="multiPartServlet" enctype="multipart/form-data">
+                      <div class="form-row">
+                        <div class="name">Type</div>
+                            <div class="value">
+                              <input type="radio" id="lodging" value="lodging" name="ticketType">
+                              <label for="lodging">LODGING</label></br>
+                              <input type="radio" id="travel" value="travel"name="ticketType">
+                              <label for="travel">TRAVEL</label></br>
+                              <input type="radio" id="food" value="food"name="ticketType">
+                              <label for="food">FOOD</label></br>
+                              <input type="radio" id="other" value="other"name="ticketType">
+                              <label for="other">OTHER</label></br>
+                            </div>
+                        <div class="name">Amount</div>
+                        <div class="value">
+                            <input class="input--style-6" type="text" id="amount" name="amount" placeholder="$" required>
+                        </div>
+                      </div>
+                      <div class="form-row">
+                          <div class="name">Description</div>
+                          <div class="value">
+                              <div class="input-group">
+                                  <textarea class="textarea--style-6" id="description" name="description" placeholder="text"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+                  <div class="card-footer">
+                    <button type="submit" id="newReimb" onclick="newReimbursement()" class="btn btn-lg btn-success">Submit</button>
+                    <button id="cancelButton" type="button" class="btn btn-lg btn-danger" onclick="location.href='employee.html'">Cancel</button>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <!-- Main JS-->
+  <script src="./employee.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

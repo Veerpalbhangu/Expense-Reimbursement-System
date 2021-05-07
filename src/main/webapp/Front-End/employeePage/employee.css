@@ -1,0 +1,24 @@
+.right{
+    width: 50%;
+    vertical-align:top;
+    text-align: left;
+    padding: 5%;
+    
+}
+.left{
+    width: 50%;
+  
+}
+#userID{
+    text-align: center;
+    vertical-align: middle;
+    padding: 10%;
+   /* width: 80%;
+    height: 80%;*/
+}
+.wrapper{
+    display:flex;
+}
+ button{
+    margin: 10%;
+}

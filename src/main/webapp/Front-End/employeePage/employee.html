@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   
+    <title>  Employee Reimbursement </title>
+   <link rel="stylesheet" href="./employee.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body style="background-color:rgb(250, 205, 123);">
+        <nav style="margin-bottom: 1px;background-color: #ff7300;" class="navbar navbar-inverse navbar fixed-top" >
+            <div class="container-fluid" style="font-size: 18px;">
+              <div class="navbar-header">
+                <a id="empHome" class="navbar-brand" href="employee.html" style="font-size: 21px;color:black"> EMPLOYEE</span></a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../login/login.html" onclick="logOut()"style="color:black"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+              </ul>
+            </div>
+          </nav>
+        <div class="wrapper">
+<div class="left">
+    <img id="userID" src="../../img/user.jpg">
+</div>
+<div class="right">
+    <button id="history" type="button" class="btn btn-primary btn-lg" ><a href="./history.html"style="color:white">HISTORY</a></button>
+    <button id="newReimb" type="button" class="btn btn-primary btn-lg"><a href="./newticket.html"style="color:white">NEW REIMBURSEMENT</a></button>
+</div>
+
+</div>
+        <script src="./employee.js"></script>
+    </body>
+    </html>

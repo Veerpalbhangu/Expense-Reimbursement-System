@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Manager Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body style="background-color: rgb(250, 205, 123);" onload="viewAllReimbursements()">
+    <nav class="navbar navbar-inverse navbar fixed-top" style="font-size: 18px;background-color:#ff7300">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a id="financeHome" class="navbar-brand" href="#" style="font-size: 21px;color:black"> MANAGER </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../login/login.html" onclick="logOut()"style="color:black"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <span> Filter application:</span> 
+    <select id="status" onchange=OnSelectionChange_All(this)>
+        <option value="0" selected>All</option>
+        <option id="pending" value="1">Pending</option>
+        <option id="denied" value="2">Denied</option>
+        <option id="approved" value="3">Approved</option>
+    </select>
+    <div style="font-size:50px; text-align: center; margin-top: 60px" >WELCOME <span id="yourName" style="margin:0px"></span></div>
+    <h2 style="text-align:center">List of Reimbursements</h2>
+    <div id="fmBody"></div>
+    <div id="modal" onclick="changeStatus()">
+    <div class="modal-body">
+      <h5>Please make selection</h5>
+    <a href="./manager.html" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Approve</a>
+    <a href="./manager.html" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">Denied</a>  
+    <hr>
+    </div>
+  </div>
+    <script src="./manager.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  </body>
+</html>
