@@ -19,7 +19,7 @@ public class UserServicesImpl implements UserServices{
 		}
 		
 		public List<User> findAll() {
-			// TODO Auto-generated method stub
+			
 			return ud.getAll();
 		}
 

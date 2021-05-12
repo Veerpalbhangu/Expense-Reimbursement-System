@@ -92,7 +92,7 @@ private ConnectionFactory cf=ConnectionFactory.getConnectionFactory();
 				allReimb.add(r);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}finally {
 			cf.releaseConnection(conn);
@@ -188,7 +188,7 @@ private ConnectionFactory cf=ConnectionFactory.getConnectionFactory();
 			try {
 				conn.rollback();
 			} catch (SQLException e1) {
-				// TODO Auto-generated catch block
+				
 				e1.printStackTrace();
 			}
 		}finally {
@@ -196,7 +196,7 @@ private ConnectionFactory cf=ConnectionFactory.getConnectionFactory();
 				conn.commit();
 				conn.setAutoCommit(true);
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			cf.releaseConnection(conn);

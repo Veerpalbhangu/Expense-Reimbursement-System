@@ -25,19 +25,19 @@ public class EmplReimbServicesImpl implements EmplReimbServices{
 
 		@Override
 		public List<Reimbursement> findAllTickets() {
-			// TODO Auto-generated method stub
+			
 			return ed.findAll();
 		}
 
 		@Override
 		public List<Reimbursement> findTicketByStatus(int statusID) {
-			// TODO Auto-generated method stub
+			
 			return ed.findAllByStatus(statusID);
 		}
 
 		@Override
 		public List<Reimbursement> findTicketByUser(int userID) {
-			// TODO Auto-generated method stub
+			
 			return ed.findAllByUserID(userID);
 		}
 

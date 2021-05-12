@@ -12,10 +12,10 @@ import com.revature.models.User;
 import com.revature.services.UserServices;
 import com.revature.services.UserServicesImpl;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+
 public class UserController {
 	
-	
-
 		private UserServices us = new UserServicesImpl(new UserPostgresDAO());
 		
 		private ObjectMapper om=new ObjectMapper();

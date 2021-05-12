@@ -21,13 +21,7 @@ public class FrontController extends HttpServlet {
 	private ReimbursementController reimbursementController= new ReimbursementController();
 	
 	protected void directControlRouter(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		//how to get a value from your init params
-		/*System.out.println(this.getInitParameter("DefaultRole"));
-		ServletContext sc = this.getServletContext();
 		
-		System.out.println(sc.getInitParameter("JavaCoolFactor"));
-		*/
-		//be our front controller
 		String URI = req.getRequestURI().substring(req.getContextPath().length(), 
 													req.getRequestURI().length());
 		String value="";
@@ -209,7 +203,7 @@ public class FrontController extends HttpServlet {
 			case "/filterByStatus":{
 				switch (req.getMethod()) {
 				case "GET":{
-					//TODO
+					
 					break;
 				}
 				case "POST":{
@@ -249,11 +243,11 @@ public class FrontController extends HttpServlet {
 	
 	
 	protected void directControl(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		//to handle all internal errors/exceptions
+		
 		try {
 			directControlRouter(request, response);
 		}catch (Throwable t) {
-			//errorController.handle(request, response, t);//go to the error controller// change here
+			
 		}
 	}
 

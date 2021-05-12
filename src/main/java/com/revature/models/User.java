@@ -9,8 +9,10 @@ public class User {
 	private String password;
 	private int role;
 	private String email;
+	
 	public User() {};
-public User(String firstName, String lastName, String username, String password, String email, int role) {
+	
+	public User(String firstName, String lastName, String username, String password, String email, int role) {
 	this.firstName=firstName;
 	this.lastName=lastName;
 	this.username=username;

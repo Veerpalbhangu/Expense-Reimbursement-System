@@ -68,6 +68,12 @@ public int getReimbursementResolverId() {
 public void setReimbursementResolverId(int reimbursementResolverId) {
 	this.reimbursementResolverId = reimbursementResolverId;
 }
+
+public Reimbursement() {
+	super();
+	
+}
+
 public Reimbursement(int reimbursementID, double reimbursementAmmount, String reimbursementSubmitted,
 		String reimbursementResolved, String reimbursementDescription, int reimbursementAuthorId,
 		int reimbursementResolverId, int reimbursementStatusId, int type, String authorName, String resolverName,
@@ -83,9 +89,6 @@ public Reimbursement(int reimbursementID, double reimbursementAmmount, String re
 	this.reimbursementStatusId = reimbursementStatusId;
 	this.type = type;
 }
-public Reimbursement() {
-	super();
-	
-}
+
 
 }
