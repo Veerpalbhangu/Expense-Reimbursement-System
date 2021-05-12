@@ -3,7 +3,4 @@
 PROJECT NAME
 Employee Reimbursement System
 
-Project Description
 
-
-Technologies Used
