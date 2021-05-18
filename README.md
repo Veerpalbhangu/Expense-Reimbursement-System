@@ -25,8 +25,9 @@ List of features ready and TODOs for future development
 
 To-do list:
 
-*Users can upload an image of their receipt when submitting reimbursement requests.
-*Allow administrators to submit reimbursement requests for other administrators to approve or deny.
+* Users can upload an image of their receipt when submitting reimbursement requests.
+
+* Allow administrators to submit reimbursement requests for other administrators to approve or deny.
 
 # Getting Started
 git clone https://github.com/Veerpalbhangu/Project-1/tree/master
