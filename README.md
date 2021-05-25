@@ -32,5 +32,16 @@ To-do list:
 # Getting Started
 git clone https://github.com/Veerpalbhangu/Expense-Reimbursement-System
 
+# Usage
+* Users can login as an employee or Manager
+* Employees can submit the reimbursement.
+* Financial managers can view the current and past requests.
+* Financial Managers can approve or deny the pending requests.
+* Financial managers can filter the requests depend uopn the status.
+* Users can logout from the system.
+
+# License
+This project uses the following license: GNU General Public License
+
 
 
