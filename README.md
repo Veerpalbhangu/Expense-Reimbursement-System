@@ -30,7 +30,7 @@ To-do list:
 * Allow administrators to submit reimbursement requests for other administrators to approve or deny.
 
 # Getting Started
-git clone https://github.com/Veerpalbhangu/Project-1/tree/master
+git clone https://github.com/Veerpalbhangu/Expense-Reimbursement-System/tree/master
 
 
 
